@@ -23,7 +23,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0.8rem 1rem;
-    background: antiquewhite; 
+    background: #faebd7; 
     z-index: 10;  /* ensures it's on top */
 }
 
@@ -225,12 +225,12 @@ h1 {
         flex-wrap: wrap;
         gap: 1.5rem;
         font-size: 1rem;
-        background: antiquewhite;
+        background: #faebd7;
     }
 
     .site-header {
         padding: 1.2rem 2rem;
-        background: antiquewhite;
+        background: #faebd7;
     }
     
     .site-header {
@@ -538,4 +538,5 @@ h1 {
         font-size: 1.2rem;
     }
 }
+
 
