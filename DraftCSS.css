@@ -22,17 +22,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.2rem 2rem;
-    background: rgba(255, 233, 195, 0.723);  /* semi-transparent background */
+    padding: 0.8rem 1rem;
+    background: antiquewhite; 
     z-index: 10;  /* ensures it's on top */
 }
 
 .main-nav ul {
     display: flex;
-    gap: 1.5rem;
+    flex-direction: column;
+    gap: 0.5rem;
     list-style: none;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
+    font-size: 0.9rem;
 }
 
 .main-nav a {
@@ -40,23 +42,28 @@ body {
     color: inherit;
 }
 
+
 /* HERO */
 .hero {
-    height: 750px;
+    height: 500px;
     background: #869782;
     position: relative;
+    margin-top: 80px;
 }
 
 .hero-image {
     width: 100%;
-    height: 800px;
+    height: 500px;
     margin: auto;
     background: #c9c9c9;
     display: block;
 }
-h1 {font-family: 'playfair display', serif;
-    font-size: 4em; 
-    color: #fffdf2;}
+
+h1 {
+    font-family: 'playfair display', serif;
+    font-size: 2em; 
+    color: #fffdf2;
+}
 
 .title {
     position: absolute;
@@ -65,32 +72,36 @@ h1 {font-family: 'playfair display', serif;
     transform: translate(-50%, -50%);
     z-index: 15;
     margin: 0;
-    padding: 2rem 2rem 1rem;
+    padding: 1.5rem 1rem;
     border-radius: 8px;
-    max-width: 600px;
+    max-width: 90%;
     text-shadow: #333 1px 1px 4px;
     text-align: center;
 }
 
 /* INTRO */
 .intro {
-    padding: 2rem;
-    max-width: 800px;
-    margin: -100px auto 0;
+    padding: 1.5rem;
+    max-width: 100%;
+    margin: -80px auto 0;
     background: rgba(255, 232, 217, 0.897);
     z-index: 10;
     position: relative;
     font-family: 'Quicksand', sans-serif;
 }
+
 .intro h2 {
     text-align: center;
 }
+
+
 /* REGION CARDS */
 .regions {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    padding: 2rem;
-    gap: 1.5rem;
+    padding: 1.5rem;
+    gap: 2rem;
 }
 
 .region-card {
@@ -101,10 +112,10 @@ h1 {font-family: 'playfair display', serif;
 
 .image-placeholder img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
-    width: 400px;
-    height: 200px;
+    max-width: 300px;
+    height: 150px;
     background: #dcdcdc;
     margin-bottom: 1rem;
     border: 2px solid #333;
@@ -121,36 +132,36 @@ h1 {font-family: 'playfair display', serif;
 
 /* SAFETY */
 .safety {
-    padding: 2rem;
-    max-width: 1000px;
+    padding: 1.5rem;
+    max-width: 100%;
     margin: auto;
     overflow: auto;
-    h2 {
-        text-align: center;
-        margin-bottom: 1rem;
-        font-family: 'quicksand', sans-serif;
-        border-bottom: #333 2px solid;
-    }
+}
+
+.safety h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'quicksand', sans-serif;
+    border-bottom: #333 2px solid;
 }
 
 .safety-image-placeholder img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
-    width: 400px;
-    height: 300px;
+    max-width: 300px;
+    height: 200px;
     background: #d0d0d0;
-    float: left;
-    margin-right: 1.5rem;
-    margin-left: 0;
     margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* FORM */
 .recommend-form {
-    padding: 2rem;
-    width: 45%;
-    float: left;
+    padding: 1.5rem;
+    width: 100%;
     box-sizing: border-box;
 }
 
@@ -168,151 +179,279 @@ h1 {font-family: 'playfair display', serif;
 }
 
 .region-form {
-  padding: 1rem 0;
+    padding: 1rem 0;
 }
 
 .region-form fieldset {
-  border: 1px solid;
-  padding: 1.25rem;
-  border-radius: 6px;
+    border: 1px solid;
+    padding: 1.25rem;
+    border-radius: 6px;
 }
 
 .region-form legend {
-  padding: 0 0.5rem;
+    padding: 0 0.5rem;
 }
 
 .radio-row {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin: 1rem 0;
-  padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    padding-left: 1rem;
 }
 
 .radio-row input[type="radio"] {
-  width: 1rem;
-  height: 1rem;
+    width: 1rem;
+    height: 1rem;
 }
-
 
 /* MAP */
 .map {
-    padding: 2rem;
-    width: 55%;
-    float: right;
+    padding: 1.5rem;
+    width: 100%;
     box-sizing: border-box;
 }
 
 .map-placeholder {
     width: 100%;
-    height: 500px;
+    height: 300px;
     background: #d0d0d0;
     margin-top: 1rem;
 }
-/* Northern AZ Sytles */
-/* Video Section */
-.video-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  margin-bottom: 3rem;
-  margin-top: 5rem;
-  position: relative;
-}
-.video-info { margin-left: 8rem; margin-right: 4rem;}
-.video-info h2 {
-  margin: 0 0 0.5rem;
+/* Mobile */
+@media (min-width: 600px) {
+    .main-nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        font-size: 1rem;
+        background: antiquewhite;
+    }
+
+    .site-header {
+        padding: 1.2rem 2rem;
+        background: antiquewhite;
+    }
+    
+    .site-header {
+        width: 100%;
+    }
+    .hero {
+        height: 600px;
+        margin-top: px;
+    }
+
+    .hero-image {
+        height: 600px;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .title {
+        padding: 2rem 1.5rem;
+        max-width: 600px;
+    }
+    .intro {
+        padding: 2rem;
+        max-width: 850px;
+        margin: -100px auto 0;
+    }
+    .regions {
+        flex-direction: row;
+        padding: 2rem;
+        gap: 1.5rem;
+    }
+
+    .image-placeholder img {
+        max-width: 350px;
+        height: 175px;
+    }
+    .safety {
+        padding: 2rem;
+        max-width: 1000px;
+    }
+
+    .safety-image-placeholder img {
+        max-width: 350px;
+        height: 250px;
+        float: left;
+        margin-right: 1.5rem;
+        margin-bottom: 1rem;
+        display: block;
+    }
+    .recommend-form {
+        padding: 2rem;
+    }
+
+    .map {
+        padding: 2rem;
+    }
+
+    .map-placeholder {
+        height: 400px;
+    }
 }
 
-.video-wrapper { width: 100%;
+/* Tablet */
+@media (min-width: 1024px) {
+    .hero {
+        height: 750px;
+        margin-top: 0;
+    }
+
+    .hero-image {
+        height: 800px;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    .title {
+        padding: 2rem 2rem 1rem;
+        max-width: 600px;
+    }
+    .intro {
+        padding: 2rem;
+        max-width: 800px;
+    }
+     .regions {
+        padding: 2rem;
+    }
+
+    .image-placeholder img {
+        width: 400px;
+        height: 200px;
+    }
+    .safety {
+        padding: 2rem;
+    }
+
+    .safety-image-placeholder img {
+        width: 400px;
+        height: 300px;
+    }
+    .recommend-form {
+        padding: 2rem;
+        width: 45%;
+        float: left;
+    }
+
+    .map {
+        padding: 2rem;
+        width: 55%;
+        float: right;
+    }
+
+    .map-placeholder {
+        height: 500px;
+    }
+}
+
+/* Northern AZ Styles */
+/* Video Section */
+.video-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    position: relative;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video-info {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.video-info h2 {
+    margin: 0 0 0.5rem;
+}
+
+.video-wrapper {
+    width: 100%;
 }
 
 .video-placeholder {
-  width: 80%;
-  padding-top: 56.25%; /* 16:9 */
-  border: 1px solid;
-  border-radius: 8px;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 */
+    border: 1px solid;
+    border-radius: 8px;
 }
+
 .table-title h2 {
-  font-family: 'merriweather', serif;
-  text-align: center;
-  margin-top: 100px;}
+    font-family: 'merriweather', serif;
+    text-align: center;
+    margin-top: 2rem;
+}
 
 .hike-table {
-  width: 90%;
-  margin: 0 auto;
-  border-collapse: collapse;
+    width: 95%;
+    margin: 1rem auto;
+    border-collapse: collapse;
+    font-size: 0.9rem;
 }
 
 .hike-table th,
 .hike-table td {
-  border: 1px solid #000000;
-  padding: 0.25rem;
-  text-align: center;
-  font-family: 'quicksand', sans-serif;
-  font-weight: bold;
+    border: 1px solid #000000;
+    padding: 0.25rem;
+    text-align: center;
+    font-family: 'quicksand', sans-serif;
+    font-weight: bold;
 }
 
 .hike-table thead th {
-  background: #a0ac9d;
-  font-weight: 600;
+    background: #a0ac9d;
+    font-weight: 600;
 }
 
 .hike-table input[type="checkbox"] {
-  width: 1rem;
-  height: 1rem;
+    width: 1rem;
+    height: 1rem;
 }
 
 /* Hike List */
 .hike-list {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  margin-top: 4rem;
-  margin-left: 10%;
-  margin-right: 10%;
-  }
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
 
 .hike {
-  display: grid;
-  grid-template-columns: 30% 65%  ;
-  grid-template-rows: auto;
-  row-gap: 5rem;
-  column-gap: 2rem;
-  align-items: start;
-  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 1rem;
+    column-gap: 2rem;
+    align-items: start;
 }
 
 .hike-image {
-  width: 100%;
-  height: 210px;
-  border: 1px solid;
-  border-radius: 8px;
+    width: 100%;
+    height: 150px;
+    border: 1px solid;
+    border-radius: 8px;
 }
 
 .hike-text h3 {
-  margin: 0 0 0.5rem;
-  font-family: 'quicksand', sans-serif;
+    margin: 0 0 0.5rem;
+    font-family: 'quicksand', sans-serif;
+    font-size: 1.1rem;
 }
 
 .hike-text p {
-  margin: 0;
-  font-family: 'quicksand', sans-serif;
-}
-
-/* Responsive */
-@media (max-width: 800px) {
-  .video-section {
-    grid-template-columns: 1fr;
-  }
-
-  .hike {
-    grid-template-columns: 1fr;
-  }
-
-  .hike-image {
-    height: 200px;
-  }
+    margin: 0;
+    font-family: 'quicksand', sans-serif;
+    font-size: 0.95rem;
 }
 
 /* FOOTER */
@@ -322,3 +461,81 @@ h1 {font-family: 'playfair display', serif;
     margin-top: 2rem;
     background: rgb(253, 242, 234);
 }
+
+/* Tablet */
+@media (min-width: 1024px) {
+    .video-section {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-top: 5rem;
+    }
+
+    .table-title h2 {
+        margin-top: 100px;
+    }
+
+    .hike-table {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .hike-list {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 4rem;
+    }
+
+    .hike {
+        grid-template-columns: 30% 65%;
+        row-gap: 5rem;
+    }
+
+    .hike-image {
+        height: 210px;
+    }
+
+    .hike-text h3 {
+        font-size: 1.3rem;
+    }
+}
+/* Tablet */
+@media (min-width: 600px) {
+    .video-section {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-top: 4rem;
+    }
+
+    .video-info {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .table-title h2 {
+        margin-top: 3rem;
+    }
+
+    .hike-table {
+        width: 90%;
+        font-size: 0.95rem;
+    }
+
+    .hike-list {
+        margin-left: 7%;
+        margin-right: 7%;
+        margin-top: 3rem;
+    }
+
+    .hike {
+        grid-template-columns: 35% 60%;
+    }
+
+    .hike-image {
+        height: 180px;
+    }
+
+    .hike-text h3 {
+        font-size: 1.2rem;
+    }
+}
+
