@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cactus & Canyon Trails</title>
+    <link rel="icon" href="favicon-32x32.png" type="image/png">
+    <link rel="stylesheet" href="DraftCSS.css">
+</head>
+
+<body>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="site-header">
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="northern-arizona.html">Northern Arizona</a></li>
+                <li><a href="phoenix-valley.html">The Phoenix Valley</a></li>
+                <li><a href="southern-arizona.html">Southern Arizona</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO / BANNER -->
+    <section class="hero">
+        <div><img src="Hero.JPG" alt="Image of a hiker looking over Sedona, Arizona" class="hero-image"></div>
+    </section>
+
+    <!-- TITLE SECTION -->
+    <h1 class="title">Cactus & Canyon Trails</h1>
+
+    <!-- WHY WE MADE THIS WEBSITE -->
+    <section class="intro">
+        <h2>A little inspiration to get outside</h2><br>
+        <p>Welcome to Cactus and Canyon Trails from my family to yours. We invite you to explore the beautiful
+            hiking trails of Arizona with us. We hope you can find the right information to plan your next adventure. 
+            We are a family of three (plus our dog!) that have been hiking Arizona for years. Our 4 year old has just
+            graduated from a hiking backpack to her own two feet and we are excited to share some of our kid-friendly
+            spots too. </p>
+    </section>
+
+    <!-- REGION CARDS -->
+    <section class="regions">
+        <div class="region-card">
+            <div class="image-placeholder"><a href="northern-arizona.html"><img src="Northern AZ.JPG" alt="Image of the Grand Canyon"></a></div>
+            <h2>Northern Arizona</h2>
+        </div>
+
+        <div class="region-card">
+            <div class="image-placeholder"><a href="phoenix-valley.html"><img src="PhoenixValley.jpg" alt="Image of the Phoenix Valley"></a></div>
+            <h2>The Phoenix Valley</h2>
+        </div>
+
+        <div class="region-card">
+            <div class="image-placeholder"><a href="southern-arizona.html"><img src="SouthernArizona.JPG" alt="Image of Southern Arizona"></a></div>
+            <h2>Southern Arizona</h2>
+        </div>
+    </section>
+
+    <!-- QUOTE SECTION -->
+    <section class="quote">
+        <blockquote>
+            <p>
+                “The sun shines not on us but in us. The rivers flow not past, but through us. Thrilling, tingling, vibrating every fiber and cell of the substance of our bodies, making them glide and sing. The trees wave and the flowers bloom in our bodies as well as our souls, and every bird song, wind song, and tremendous storm song of the rocks in the heart of the mountains is our song, our very own, and sings our love.”
+            </p>
+            <cite>— John Muir</cite>
+        </blockquote>
+    </section>
+
+    <!-- SAFETY NOTES -->
+    <section class="safety">
+        <div class="safety-image-placeholder"><a href="https://azstateparks.com/hiking-safety#https://azstateparks.com/lost-dutchman/things-to-do/trails"><img src="SafetyLink.png" alt="Safety guidelines image"></a></div>
+        <h2>Some notes about hiking safely in Arizona</h2>
+        <div class="safety-text">
+            <ul>
+                <li>Watch the Weather! Arizona&apos;s temperature can be deceiving and deadly.</li>
+                <li>Dress Appropriately &amp; Wear Sunscreen.</li>
+                <li>Bring Lots of Water. Take more water than you think you&apos;ll need!</li>
+                <li>Carry a mobile phone.</li>
+                <li>Hike with others.</li>
+                <li>Be honest about your ability level!</li>
+                <li>Don't Trailblaze!</li>
+                <li>Be the responsible hiker who takes a hike and does it right.</li>
+            </ul>
+    </section>
+
+    <!-- FORM SECTION -->
+    <section class="recommend-form">
+        <h2>Recommend a Hike</h2>
+
+        <form>
+            <label for="name">Your Name</label>
+            <input id="name" type="text">
+
+<form class="region-form">
+  <fieldset>
+    <legend>What's your favorite region to hike</legend>
+
+    <label class="radio-row">
+      <input type="radio" name="region" value="northern" />
+      <span>Northern Arizona</span>
+    </label>
+
+    <label class="radio-row">
+      <input type="radio" name="region" value="phoenix" />
+      <span>The Phoenix Valley</span>
+    </label>
+
+    <label class="radio-row">
+      <input type="radio" name="region" value="southern" />
+      <span>Southern Arizona</span>
+    </label>
+  </fieldset>
+</form>
+
+            <label for="next-hike">What hike should we try next?</label>
+            <input id="next-hike" type="text">
+
+            <label for="why">What do you like about the hike you recommended?</label>
+            <textarea id="why"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- MAP SECTION -->
+    <section class="map">
+        <h2>Our hikes so far...</h2>
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1G06PSgyMHpeKYL362K5acqFnLyuyL6A&ehbc=2E312F" 
+            width="640" 
+            height="480">
+        </iframe>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        © 2026 Cactus & Canyon Trails
+    </footer>
+
+</body>
+</html>
