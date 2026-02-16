@@ -14,18 +14,21 @@ body { font-family: 'montserrat', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.8rem 1rem;
+    padding: 1.2rem 2rem;
     background: #faebd7; 
-    z-index: 10; }
+    z-index: 10;
+    width: 100%; }
 
 .main-nav ul {
     display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
     list-style: none;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
-    font-size: 0.9rem; }
+    font-size: 1rem;
+    background: #faebd7; }
 
 .main-nav a {
     text-decoration: none;
@@ -33,20 +36,20 @@ body { font-family: 'montserrat', sans-serif;
 
 /* HERO */
 .hero {
-    height: 500px;
+    height: 750px;
     background: #869782;
     position: relative;
-    margin-top: 80px; }
+    margin-top: 0; }
 
 .hero-image { 
     width: 100%;
-    height: 500px;
+    height: 800px;
     margin: auto;
     background: #c9c9c9;
     display: block; }
 
 h1 { font-family: 'playfair display', serif;
-    font-size: 2em; 
+    font-size: 4em; 
     color: #fffdf2; }
 
 .title { position: absolute;
@@ -55,16 +58,16 @@ h1 { font-family: 'playfair display', serif;
     transform: translate(-50%, -50%);
     z-index: 15;
     margin: 0;
-    padding: 1.5rem 1rem;
+    padding: 2rem 2rem 1rem;
     border-radius: 8px;
-    max-width: 90%;
+    max-width: 600px;
     text-shadow: #333 1px 1px 4px;
     text-align: center; }
 
-/* INTRO */
-.intro { padding: 1.5rem;
-    max-width: 100%;
-    margin: -80px auto 0;
+/* Site Introduction */
+.intro { padding: 2rem;
+    max-width: 800px;
+    margin: -100px auto 0;
     background: rgba(255, 232, 217, 0.897);
     z-index: 10;
     position: relative;
@@ -72,37 +75,35 @@ h1 { font-family: 'playfair display', serif;
 
 .intro h2 { text-align: center; }
 
-/* REGION SELECTION */
+/* Site Direction by Region */
 .regions { display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
-    padding: 1.5rem;
-    gap: 2rem; }
+    padding: 2rem;
+    gap: 1.5rem; }
 
-.region-card { width: 100%;
+.region-title { width: 100%;
     text-align: center;
     font-family: 'Playfair Display', serif; }
 
-.image-placeholder img { 
-    width: 100%;
-    height: auto;
+.region-image img { 
+    width: 400px;
+    height: 200px;
     object-fit: cover;
-    max-width: 300px;
-    height: 150px;
     background: #dcdcdc;
     margin-bottom: 1rem;
     border: 2px solid #333;}
 
-/* QUOTE */
+/* Quote Section */
 .quote {
     padding: 2rem;
     background: #a0ac9d;
     text-align: center;
     font-style: italic; }
 
-/* SAFETY */
+/* Safety Section */
 .safety {
-    padding: 1.5rem;
+    padding: 2rem;
     max-width: 100%;
     margin: auto;
     overflow: auto; }
@@ -120,22 +121,21 @@ h1 { font-family: 'playfair display', serif;
     line-height: 1.5;
     font-size: 1rem; }
 
-.safety-image-placeholder img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    max-width: 300px;
+.safety-image img {
+    width: 400px;
     height: 300px;
+    object-fit: cover;
     background: #d0d0d0;
     margin-bottom: 1rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto; }
+    float: left;
+    margin-right: 1.5rem;
+    display: block; }
 
-/* FORM */
+/* Form Section */
 .recommend-form {
-    padding: 1.5rem;
-    width: 100%;
+    padding: 2rem;
+    width: 45%;
+    float: left;
     box-sizing: border-box; }
 
 .recommend-form form {
@@ -171,115 +171,35 @@ h1 { font-family: 'playfair display', serif;
     width: 1rem;
     height: 1rem; }
 
-/* MAP */
+/* Google Map Area */
 .map {
-    padding: 1.5rem;
-    width: 100%;
+    padding: 2rem;
+    width: 55%;
+    float: right;
     box-sizing: border-box; }
 
 .map-placeholder {
     width: 100%;
-    height: 300px;
+    height: 500px;
     background: #d0d0d0;
     margin-top: 1rem; }
 
-/* Mobile */
-@media (min-width: 600px) {
-    .main-nav ul {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 1.5rem;
-        font-size: 1rem;
-        background: #faebd7; }
-    .site-header {
-        padding: 1.2rem 2rem;
-        background: #faebd7; }  
-    .site-header {
-        width: 100%; }
-    .hero { height: 600px;
-        margin-top: 0; }
-    .hero-image {
-        height: 600px; }
-    h1 { font-size: 3em; }
-    .title { padding: 2rem 1.5rem;
-        max-width: 600px; }
-    .intro {
-        padding: 2rem;
-        max-width: 850px;
-        margin: -100px auto 0; }
-    .regions { flex-direction: row;
-        padding: 2rem;
-        gap: 1.5rem; }
-    .image-placeholder img {
-        max-width: 350px;
-        height: 175px; }
-    .safety { padding: 2rem;
-        max-width: 1000px; }
-
-    .safety-image-placeholder img {
-        max-width: 350px;
-        height: 250px;
-        float: left;
-        margin-right: 1.5rem;
-        margin-bottom: 1rem;
-        display: block; }
-    .recommend-form {
-        padding: 2rem; }
-    .map { padding: 2rem; }
-    .map-placeholder { height: 400px; }
-}
-
-/* Tablet */
-@media (min-width: 1024px) {
-    .hero { 
-        height: 750px;
-        margin-top: 0; }
-    .hero-image {
-        height: 800px; }
-    h1 {
-        font-size: 4em; }
-    .title {
-        padding: 2rem 2rem 1rem;
-        max-width: 600px; }
-    .intro {
-        padding: 2rem;
-        max-width: 800px; }
-     .regions { padding: 2rem; }
-    .image-placeholder img {
-        width: 400px;
-        height: 200px; }
-    .safety { padding: 2rem; }
-    .safety-image-placeholder img {
-        width: 400px;
-        height: 300px; }
-    .recommend-form {
-        padding: 2rem;
-        width: 45%;
-        float: left; }
-    .map {
-        padding: 2rem;
-        width: 55%;
-        float: right; }
-    .map-placeholder {
-        height: 500px; }
-}
-
-/* Northern AZ Styles */
-/* Video Section */
+/* SubPages Styles */
+/* Northern AZ Video Section */
 .video-section {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
     margin-bottom: 2rem;
-    margin-top: 3rem;
+    margin-top: 5rem;
     position: relative;
     width: 80%;
     margin-left: auto;
     margin-right: auto; }
 
 .video-info {
-    margin-left: 1rem;
-    margin-right: 1rem; }
+    margin-left: 0;
+    margin-right: 0; }
 
 .video-info h2 { margin: 0 0 0.5rem; }
 
@@ -287,7 +207,7 @@ h1 { font-family: 'playfair display', serif;
 
 .video-placeholder {
     width: 100%;
-    padding-top: 56.25%; /* 16:9 */
+    padding-top: 56.25%;
     border: 1px solid;
     border-radius: 8px; }
 
@@ -300,6 +220,35 @@ h3 {
     margin-top: 75px;
     border-bottom: #333 1px solid; }
 
+/* Southern AZ Rooster Cogburn Ostrich Ranch Section */
+
+.ostrich {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+    position: relative;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; }
+.ostrich-info {
+    margin-left: 0; }
+.ostrich-info h2 { margin: 0 0 0.5rem; text-align: center; }
+.ostrich-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    background: #d0d0d0;
+    margin-bottom: 1rem;
+    border: 1px solid;
+    border-radius: 8px; }
+.ostrich a {
+    display: block;
+    margin: 1rem 0;
+    text-align: center;}
+
+/* Phoenix Valley - Favorite Cacti Section */
 .cacti {
     font-family: 'quicksand', sans-serif;
     font-size: 1rem;
@@ -323,11 +272,7 @@ h3 {
   border-radius: 8px;
   scroll-snap-align: start; }
 
-.table-title {
-    font-family: 'fairplay display', serif;
-    text-align: center;
-    margin-top: 2rem;
-    font-size: 2rem; }
+
 
 .gallery-scroll figcaption {
   margin-top: 0.5rem;
@@ -336,11 +281,20 @@ h3 {
   color: #555;
   text-align: center; }
 
+/* All Subpages Styles */
+/* Hiking Info Table */
+
 .hike-table {
-    width: 95%;
+    width: 90%;
     margin: 1rem auto;
     border-collapse: collapse;
-    font-size: 0.9rem; }
+    font-size: 1rem; }
+
+.table-title {
+    font-family: 'fairplay display', serif;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2rem; }
 
 .hike-table th,
 .hike-table td {
@@ -359,85 +313,43 @@ h3 {
     height: 1rem; }
 
 /* Hike List */
+
 .hike-list {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin-top: 2rem;
-    margin-left: 5%;
-    margin-right: 5%; }
+    margin-top: 4rem;
+    margin-left: 10%;
+    margin-right: 10%; }
 
 .hike {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 30% 65%;
     grid-template-rows: auto;
-    row-gap: 1rem;
+    row-gap: 5rem;
     column-gap: 2rem;
     align-items: start; }
 
 .hike-image {
     width: 100%;
-    height: 150px;
+    height: 210px;
     border: 1px solid;
     border-radius: 8px; }
 
 .hike-text h3 {
     margin: 0 0 0.5rem;
     font-family: 'quicksand', sans-serif;
-    font-size: 1.1rem; }
+    font-size: 1.3rem; }
 
 .hike-text p {
     margin: 0;
     font-family: 'quicksand', sans-serif;
     font-size: 0.95rem; }
 
-/* FOOTER */
+/* footer */
 .site-footer {
     text-align: center;
     padding: 1.5rem;
     margin-top: 2rem;
     background: rgb(253, 242, 234); }
-
-/* Tablet */
-@media (min-width: 1024px) {
-    .video-section {
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-        margin-top: 5rem; }
-    .table-title h2 { margin-top: 100px; }
-    .hike-table {
-        width: 90%;
-        font-size: 1rem; }
-    .hike-list {
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-top: 4rem; }
-    .hike {
-        grid-template-columns: 30% 65%;
-        row-gap: 5rem; }
-    .hike-image { height: 210px; }
-    .hike-text h3 { font-size: 1.3rem; }
-}
-/* Tablet */
-@media (min-width: 600px) {
-    .video-section {
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-        margin-top: 4rem; }
-    .video-info {
-        margin-left: 0;
-        margin-right: 0; }   
-    .table-title h2 { margin-top: 3rem; }
-    .hike-table {
-        width: 90%;
-        font-size: 0.95rem; }
-    .hike-list {
-        margin-left: 7%;
-        margin-right: 7%;
-        margin-top: 3rem; }
-    .hike { grid-template-columns: 35% 60%; }
-    .hike-image { height: 180px; }
-    .hike-text h3 { font-size: 1.2rem; }
-}
-
 
