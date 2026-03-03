@@ -43,7 +43,7 @@ body { font-family: 'montserrat', sans-serif;
 
 .hero-image { 
     width: 100%;
-    aspect-ratio: 16/9;
+    aspect-ratio: 1.84/1;
     margin: auto;
     background: #c9c9c9;
     display: block; }
@@ -377,4 +377,5 @@ h3 { margin-top: 150px;}
     padding: 1.5rem;
     margin-top: 2rem;
     background: rgb(253, 242, 234); }
+
 
